@@ -24,18 +24,18 @@ FROM {tablename_etl}
 """
 
 # %%
-# df=pd.read_sql(query,engine_etl)
+df=pd.read_sql(query,engine_etl)
 
 # %%
-# tanggal_awal=df['entry_time'][0].date()
-tanggal_awal=pd.Timestamp(2019,1,1).date()
+# %%
+tanggal_awal=df['entry_time'][0].date()
+#tanggal_awal=pd.Timestamp(2019,3,11).date()
 # %%
 tanggal_awal+=timedelta(days=1)
 
 # %%
 # %%
 print('hello world')
-
 
 # %%
 import geopandas as gpd
